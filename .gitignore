@@ -1,0 +1,25 @@
+# Node.js 관련
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 빌드 결과물
+build/
+dist/
+
+# 환경 변수 파일
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 에디터/IDE 관련 (VSCode, JetBrains, macOS 등)
+.vscode/
+.idea/
+.DS_Store
+
+# 로그 및 캐시
+*.log
+.cache/
