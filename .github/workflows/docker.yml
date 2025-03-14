@@ -17,7 +17,7 @@ jobs:
         run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
 
       - name: Build Docker Image
-        run: docker build -t ghcr.io/organization_name/frontend-repo:latest .
+        run: docker build -t ghcr.io/docker-seo/frontend-repo:latest .
 
       - name: Push Docker Image to GHCR
-        run: docker push ghcr.io/organization_name/frontend-repo:latest
+        run: docker push ghcr.io/docker-seo/frontend-repo:latest
