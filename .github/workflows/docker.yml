@@ -1,0 +1,23 @@
+name: Build and Push Frontend to GHCR
+
+on:
+  push:
+    branches:
+      - main  # main 브랜치에 push되면 실행
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Log in to GitHub Container Registry
+        run: echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u $GITHUB_ACTOR --password-stdin
+
+      - name: Build Docker Image
+        run: docker build -t ghcr.io/organization_name/frontend-repo:latest .
+
+      - name: Push Docker Image to GHCR
+        run: docker push ghcr.io/organization_name/frontend-repo:latest
