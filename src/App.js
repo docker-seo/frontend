@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div>
-      <h1>상품목록페이지~~</h1>
+      <h1>상품목록페이지~~!!!</h1>
       <hr/>
       <div>
         {products.map((product)=> <Card product={product}/>)}
