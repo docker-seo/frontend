@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div>
-      <h1>오징어어목록페이지~~!!!테스트추가testBBB</h1>
+      <h1>오징어어목록페이지~~!!!테스트추가testAAA</h1>
       <h1>ㅎㅇ?</h1>
       <hr />
       <div>
